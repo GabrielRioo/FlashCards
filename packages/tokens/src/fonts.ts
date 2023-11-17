@@ -8,8 +8,8 @@ export const fonts = {
     },
 
     fontWeights: {
-        regular: 400,
-        bold: 700
+        regular: '400',
+        bold: '700'
     },
 
     fontFamilies: {
@@ -17,7 +17,7 @@ export const fonts = {
     },
 
     lineHeights: {
-        heading: '1.5',
-        base: '1.25'
+        heading: '1.25',
+        base: '1.6'
     },
 }
