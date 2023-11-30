@@ -1,81 +1,35 @@
-# Turborepo starter
+# Study Flashcards Project
+This is a flashcards project developed to facilitate the study process, providing an interactive and effective way to review important information.
 
-This is an official starter Turborepo.
+![image](https://github.com/GabrielRioo/FlashCards/assets/61875527/02e14da2-f46d-44fc-a57d-cda09d0a007c)
+![image](https://github.com/GabrielRioo/FlashCards/assets/61875527/64e5f846-0298-4d62-b95f-77b15085bf1d)
+![image](https://github.com/GabrielRioo/FlashCards/assets/61875527/2aee5b6b-e18a-4af8-b7f6-f7d262d5bb46)
+![image](https://github.com/GabrielRioo/FlashCards/assets/61875527/d896178a-e851-4903-9ca2-dec303aa62c1)
 
-## Using this example
 
-Run the following command:
+# Technologies Used
 
-```sh
-npx create-turbo@latest
-```
+The project was built using the following technologies:
 
-## What's inside?
+* **React**:  JavaScript library for building user interfaces.
+* **NextJS**: React framework that makes it easy to create fast and scalable web applications.
+* **Turbo Repo**: Tool for managing monorepos, simplifying the development of projects with multiple parts.
+* **ESLint**:  Linting tool to identify and fix issues in JavaScript/React code.
+* **Tailwind CSS**: Utility-first CSS framework for rapid and efficient development.
+* **FrameMotion**: Library for animations in React, providing a more dynamic experience.
 
-This Turborepo includes the following packages/apps:
+# How to Run the Project
+Follow the steps below to run the project locally:
 
-### Apps and Packages
+### Clone this repository:
+`git clone https://github.com/seu-usuario/nome-do-repositorio.git`
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+### Install dependencies:
+`npm install`
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Start the development server:
+`npm run dev`
 
-### Utilities
+The project will be available at http://localhost:3000.
 
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Enjoy your study sessions! 📚✨
