@@ -23,7 +23,7 @@ export default function Home() {
             return (
               <div
                 key={i}
-                className="flex flex-col gap-5 py-6 px-5 rounded-lg border-mirage-100 shadow-lg"
+                className="flex flex-col gap-5 py-6 px-5 rounded-lg border-mirage-100 shadow-lg transition-transform duration-300 hover:scale-[1.025]"
               >
                 <span className="font-bold text-sm text-mirage-600 leading-heading">
                   JAVASCRIPT
@@ -40,7 +40,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <a className="py-3 px-5 flex items-center gap-3 font-bold text-sm bg-marine-500 rounded-md text-mirage-50">
+                  <a className="py-3 px-5 flex items-center gap-3 font-bold text-sm bg-marine-500 rounded-md text-mirage-50 hover:bg-marine-600 transition-colors">
                     Acessar coleção
                     <MoveRight className="w-5 h-5" />
                   </a>
