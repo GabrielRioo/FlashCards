@@ -11,7 +11,7 @@ export default function Flash() {
 
   return (
     <div className="bg-gradient-to-t from-marine-600 to-marine-500 h-screen text-mirage-50 flex flex-col md:items-center">
-      <div className="flex-1 flex flex-col self-stretch items-center py-20">
+      <div className="flex-1 flex flex-col self-stretch items-center py-20 mr-10 ml-10">
         <div className="space-y-4">
           <span className="text-xl leading-heading font-bold">
             Fundamentos do Javascript
@@ -23,7 +23,7 @@ export default function Flash() {
           </Progress>
         </div>
 
-        <div className="relative mt-20 w-full max-w-[480px] min-h-[416px]">
+        <div className="relative mt-20 w-full  max-w-[480px] min-h-[416px]">
           <motion.div
             className="rounded-lg relative inset-0 h-full bg-mirage-50 w-full px-6 py-6 z-20"
             transition={{ duration: 0.4 }}
