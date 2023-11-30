@@ -1,6 +1,12 @@
 # Study Flashcards Project
 This is a flashcards project developed to facilitate the study process, providing an interactive and effective way to review important information.
 
+![image](https://github.com/GabrielRioo/FlashCards/assets/61875527/02e14da2-f46d-44fc-a57d-cda09d0a007c)
+![image](https://github.com/GabrielRioo/FlashCards/assets/61875527/64e5f846-0298-4d62-b95f-77b15085bf1d)
+![image](https://github.com/GabrielRioo/FlashCards/assets/61875527/2aee5b6b-e18a-4af8-b7f6-f7d262d5bb46)
+![image](https://github.com/GabrielRioo/FlashCards/assets/61875527/d896178a-e851-4903-9ca2-dec303aa62c1)
+
+
 # Technologies Used
 
 The project was built using the following technologies:
