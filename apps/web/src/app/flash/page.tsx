@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Progress, ProgressBar, ProgressIndicator } from 'ui'
 
 const flashCardsTotal = 12
 
@@ -12,27 +13,14 @@ export default function Flash() {
     <div className="bg-gradient-to-t from-marine-600 to-marine-500 h-screen text-mirage-50 flex flex-col md:items-center">
       <div className="flex-1 flex flex-col self-stretch items-center py-20">
         <div className="space-y-4">
-          <div>
-            <span className="text-xl leading-heading font-bold">
-              Fundamentos do Javascript
-            </span>
-          </div>
+          <span className="text-xl leading-heading font-bold">
+            Fundamentos do Javascript
+          </span>
 
-          <div className="flex items-center gap-3">
-            <div className="h-3 flex-1 bg-marine-800 rounded-md">
-              <div
-                className="h-3 rounded-md bg-marine-300 transition-all"
-                style={{
-                  width: `${Math.round(
-                    (flashCardsCount * 100) / flashCardsTotal,
-                  )}%`,
-                }}
-              ></div>
-            </div>
-            <span className="text-sm font-mono font-bold">
-              {String(flashCardsCount).padStart(2, '0')}/{flashCardsTotal}
-            </span>
-          </div>
+          <Progress max={flashCardsTotal} now={flashCardsCount}>
+            <ProgressBar />
+            <ProgressIndicator />
+          </Progress>
         </div>
 
         <div className="relative mt-20 w-full max-w-[480px] min-h-[416px]">
@@ -52,21 +40,21 @@ export default function Flash() {
             <AnimatePresence>
               {shouldShowAnswer ? (
                 <motion.p
-                  layoutId="card-text"
+                  key="card-result"
                   className="text-smoke-950 leading-base text-center flex justify-center items-center"
-                  initial={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.5 }}
                 >
                   teste
                 </motion.p>
               ) : (
                 <motion.p
-                  layoutId="card-text"
+                  key="card-question"
                   className="text-smoke-950 leading-base text-center flex justify-center items-center"
                   initial={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.1 }}
                 >
                   Método utilizado para percorrer um array e criar um novo a
                   partir do original com possiceis modificações
@@ -75,13 +63,15 @@ export default function Flash() {
             </AnimatePresence>
           </div>
 
-          <div className="z-10 rounded-lg bg-mirage-50/60 mx-6 left-4 right-4 absolute h-20 -bottom-3">
-            asd
-          </div>
+          <div className="z-10 rounded-lg bg-mirage-100  mx-6 left-1 right-1 absolute h-full -bottom-3"></div>
+          <div className="z-5 rounded-lg bg-mirage-200  mx-6 left-4 right-4 absolute h-full -bottom-6"></div>
         </div>
       </div>
       <button
-        onClick={() => setShouldShowAnswer(!shouldShowAnswer)}
+        onClick={() => {
+          setShouldShowAnswer(!shouldShowAnswer)
+          setFlashCardsCount((state) => state + 1) //
+        }}
         className="bg-mirage-50 text-marine-500 py-8 w-full font-bold uppercase hover:bg-mirage-50/90 md:w-[320px] md:mb-16 md:rounded-full md:py-6"
       >
         Revelar Resposta
